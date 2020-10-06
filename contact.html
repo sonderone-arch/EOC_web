@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="keyword" content="Cat, Gif" />
+<meta name="description" content="Cat Gifs" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@motions_cat" />
+<meta property="og:url" content="http://motions.cat/about.html" />
+<meta property="og:title" content="(^._.^)EverydayOneCat! -about-" />
+<meta property="og:description" content="Rainbowed Cat Gifs!" />
+<meta property="og:image" content="http://motions.cat/gif/nouhin/14.gif" /> 
+<script type="text/javascript" src="js/add-event.js"></script>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/cat_cookie.js"></script>
+<script type="text/javascript" src="js/rainbow.js"></script>
+<script src="http://twemoji.maxcdn.com/twemoji.min.js"></script>
+<style type="text/css">#mail{
+	text-shadow: rgba(0,0,0,0.3) 8px 8px 2px;
+}
+#mail_cm{
+	text-shadow: rgba(0,0,0,0.3) 8px 8px 2px;
+}
+img.emoji {
+    height: 1em;
+    width: 1em;
+    margin: 0 .05em 0 .1em;
+    vertical-align: -0.1em;
+}
+</style>
+<script>
+
+	$(function() {
+		//$('#mail').hover(function(){
+			//$('#mail, #mail_cm').rainbow({animate:true,animateInterval:100,colors:['#D8484D','#D87C3B','#DBD369','#65A83C','#28abe2','#527CC9','#715860']});
+			$('#mail').rainbow({animate:true,animateInterval:100,colors:['#65A83C','#28abe2','#527CC9','#715860']});
+			$('#mail_cm').rainbow({animate:true,animateInterval:100,colors:['#D8484D','#D87C3B','#DBD369','#65A83C']});
+		//});
+	});
+
+</script>
+<script type="text/javascript" src="js/jquery.jrumble.1.3.min.js"></script>
+<script type="text/javascript">
+	// (((((^._.^)))))
+	$(function(){
+		var getDevice = (function(){
+		    var ua = navigator.userAgent;
+		    if(ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0){
+		        return 'sp';
+		    }else if(ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0){
+		        return 'tab';
+		    }else{
+		        return 'other';
+		    }
+		})();
+
+		if(getDevice == 'sp') {
+		} else if(getDevice == 'tab') {
+		}else {
+			var jrumbleElem = $('a:not(.smart_counter), #mail, #mail_cm, #twitter-widget-0, #title_image');
+			jrumbleElem.jrumble({
+				x: 6,
+				y: 6,
+				rotation: 1,
+				speed: 2
+			});
+			jrumbleElem.hover(function(){
+				$(this).trigger('startRumble');
+			}, function(){
+				$(this).trigger('stopRumble');
+			});
+		}
+	});
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics Meow -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108800713-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108800713-1');
+</script>
+<title>(^._.^)Contact!</title>
+<style>body {
+	 padding: 0;
+	 margin: 0;
+	 background-image: url(images/bg.jpg);
+	 	 cursor: crosshair;
+
+}
+
+article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { display: block;}
+
+div.meow {
+	position: absolute;
+	/*height: 100%;*/
+	width: 100%;
+	overflow: hidden;
+}
+
+ul.menyan {
+}
+
+ul.menyan>li{
+}
+
+/* 下に張り付かせるニャン */
+footer {
+	display: block;
+	width: 100%;
+	text-align: center;
+	bottom: 0;
+	position: relative;
+}
+
+</style>
+</head>
+<body>a
+<div class="meow">
+	<header>
+	<h1>Contact!</h1>
+		<nav>
+			<ul class="menyan">
+				<li><a href="top.html" alt="Back Home">←Back</a></li>
+			</ul>
+		</nav>
+	</header>
+	<hr>
+    <div style="background-color: #fcc; font-weight: bold;">
+    	<h2>E-mail!</h2>
+    	<h5>CM or <a href="https://www.spam-jp.com/">SPAM MEAT CAN</a>!?:</h5>
+    		<div id="mail_cm" style="font-size: 64px; word-wrap: break-word; ">eveonecatcm[donuts]gmail.com</div>
+    	<h5>cat directly!? <span style="font-size: x-small;">*replies are fickle</span> :</h5>
+			<div id="mail" style="font-size: 64px; word-wrap: break-word; ">eveonecat[dog]gmail.com</div>
+		<p style="font-size: smaller;">[donuts]/[dog] : @</p>
+    </div>
+	<hr>
+	<footer>
+		This site is Parody&Respect of <a href="https://motions.work">EverydayOneMotion</a><br>
+		<p><a href="https://twitter.com/share" class="twitter-share-button" data-via="motions_cat" data-size="large">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
+		    <p>Copyright © 2017-2020 EverydayOneCat All Rights Reserved.</p>
+		<p style="font-size:smaller; margin-top:0px;"><a href="https://odaibako.net/u/motions_cat">Say meow to Cat</a>｜<!--a href="./contact.html"-->Contact Cat<!--/a-->|<a href="http://orteil.dashnet.org/cookieclicker/" target='_blank'>Cookie Policy</a></p>
+	</footer>
+</div>
+<script type="text/javascript" src="js/mouse-stalker_cat_with_kirakira.js"></script>
+<script type="text/javascript">
+	twemoji.parse(document.body);
+</script>
+</body>
+</html>

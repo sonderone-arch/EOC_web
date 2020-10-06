@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--
+              .__....._             _.....__,
+                 .": o :':         ;': o :".
+                 `. `-' .'.       .'. `-' .'   
+                   `---'             `---'  
+
+         _...----...      ...   ...      ...----..._
+      .-'__..-""'----    `.  `"`  .'    ----'""-..__`-.
+     '.-'   _.--"""'       `-._.-'       '"""--._   `-.`
+     '  .-"'                  :                  `"-.  `
+       '   `.              _.'"'._              .'   `
+             `.       ,.-'"       "'-.,       .'
+               `.                           .'
+          jgs    `-._                   _.-'
+                     `"'--...___...--'"`
+
+	-->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="keyword" content="Cat, Gif" />
+<meta name="description" content="Cat Gifs" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@motions_cat" />
+<meta property="og:url" content="http://motions.cat/top.html" />
+<meta property="og:title" content="(^._.^)EverydayOneCat!" />
+<meta property="og:description" content="Rainbowed Cat Gifs!" />
+<meta property="og:image" content="http://motions.cat/gif/nouhin/81.gif" /> 
+<title>(^._.^)EverydayOneCat!</title>
+<!-- Cat is eating javascript... -->
+<link rel="stylesheet" href="css/lightbox.min.css">
+<script type="text/javascript" src="js/add-event.js"></script>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="counter_meowbutton_read.js"></script>
+<script type="text/javascript" src="counter_meowbutton_submit.js"></script>
+<script type="text/javascript" src="js/cat_cookie.js"></script>
+<script type="text/javascript" src="js/cat_omikuji.js"></script>
+<script type="text/javascript" src="js/cat_check_sp.js"></script>
+<script type="text/javascript" src="js/jquery.jrumble.1.3.min.js"></script>
+<script src="http://twemoji.maxcdn.com/twemoji.min.js"></script>
+<script type="text/javascript">
+	// (((((^._.^)))))
+	$(function(){
+		var getDevice = (function(){
+		    var ua = navigator.userAgent;
+		    if(ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0){
+		        return 'sp';
+		    }else if(ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0){
+		        return 'tab';
+		    }else{
+		        return 'other';
+		    }
+		})();
+
+		if(getDevice == 'sp') {
+		} else if(getDevice == 'tab') {
+		}else {
+			var jrumbleElem = $('a:not(.smart_counter), #meow_button, #twitter-widget-0, #title_image');
+			jrumbleElem.jrumble({
+				x: 6,
+				y: 6,
+				rotation: 6,
+				speed: 5
+				// opacity: true,
+				// opacityMin: 1
+			});
+			jrumbleElem.hover(function(){
+				$(this).trigger('startRumble');
+			}, function(){
+				$(this).trigger('stopRumble');
+			});
+		}
+	});
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics Meow -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108800713-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108800713-1');
+</script>
+<style>/*
+@font-face {
+	font-family: "EveOneCatFont";
+ 	src: url(font/Eveonecatfont-Regular.eot) format("eot"), url(font/Eveonecatfont-Regular.woff) format("woff");
+}
+
+body{
+ 	font-family: EveOneCatFont, sans-serif;
+}
+*/
+body {
+	 padding: 0;
+	 margin: 0;
+	 	 cursor: crosshair;
+	 	background-color: #5DC0C8;
+	background-image: url(images/bg.jpg);
+		/*height: 100%;
+	width: 100%;*/
+
+}
+
+article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { display: block;}
+
+div.meow {
+	position: absolute;
+	/*height: 100%;*/
+	width: 100%;
+	overflow: hidden;
+	/* background: linear-gradient(225deg, #D8484D 0%, #D87C3B 29%, #DBD369 43%, #65A83C 57%, #5DC0C8 72%, #527CC9 86%, #482937 100%);*/
+}
+
+ul.menyan {
+}
+
+ul.menyan>li{
+}
+
+
+img.eoc {
+	width:64px;
+	height:64px;
+	border: solid 2px #000;
+}
+
+img.eoc:hover {
+	/*opacity: 0.6;*/
+}
+
+/* 下に張り付かせるニャン */
+footer {
+	display: block;
+	width: 100%;
+	text-align: center;
+	bottom: 0;
+	position: relative;
+}
+.lb-outerContainer {
+	background-color: #ede2d6;
+}
+
+p.marquee {
+  margin:0;
+  padding-left:100%;
+  display:inline-block;
+  white-space:nowrap;
+  animation-name:marquee;
+  animation-duration:6s;
+  animation-timing-function:linear;
+  animation-iteration-count:infinite;
+  animation-direction: alternate;
+}
+
+button {
+	cursor: pointer;
+}
+
+@keyframes marquee {
+  from { transform:translate(0);     }
+  to   { transform:translate(-100%); }
+}
+#meow_counter {
+	background-color: #fff;
+    border-radius: 10px;
+    padding: 2px 8px;
+    cursor: initial;
+    display: inline-block;
+}
+.meowcount {
+	width: 8px;
+	height: 16px;
+}
+#meow_button_setsumei{
+    font-style: italic;
+    font-size: smaller;
+}
+.gifcats {
+	line-height: 0;
+	padding: 0 20px;
+}
+
+h3 {
+	margin-left:20px;
+}
+
+.lightboxOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: transparent;
+    filter: alpha(Opacity=100);
+    opacity: 1;
+    background-image: url("images/modal_bg_min.gif");
+}
+
+.lb-data {
+	color: #fff;
+	text-shadow: #1B1421 2px 2px 0px;
+}
+
+.lb-dataContainer{
+	background-color: #1B1421;
+    border-radius: 0 0 4px 4px;
+}
+.lightbox .lb-image{
+	border: 4px solid #1B1421;
+	border-radius: 4px 4px 0 0;
+}
+
+.lb-nav a.lb-next {
+    width: 34%;
+}
+
+img.emoji {
+    height: 1em;
+    width: 1em;
+    margin: 0 .05em 0 .1em;
+    vertical-align: -0.1em;
+}
+.eoc-image-link{
+	width: 64px;
+	height:64px;
+}
+
+.donate_button:hover{
+	opacity: 0.8;
+}
+
+</style>
+<script type="text/javascript">
+	$(function(){
+		// kado migaki
+		$(".eoc").each(function(i, elem) { // 画像のまるみとボーダーカラーをめちゃくちゃにする
+			brnd = Math.round(Math.random()*32);
+			bcol = '';
+		    if (brnd < 32*1/7) {
+		    	bcol = '#D8484D';
+		    } else if (brnd < 32*2/7) {
+		    	bcol = '#D87C3B';
+		    } else if (brnd < 32*3/7) {
+		    	bcol = '#DBD369';
+		    } else if (brnd < 32*4/7) {
+		    	bcol = '#65A83C';
+		    } else if (brnd < 32*5/7) {
+		    	bcol = '#30652D';
+		    } else if (brnd < 32*6/7) {
+		    	bcol = '#527CC9';
+		    } else {
+		    	bcol = '#D5A999';
+		    }
+		    $(elem).css('border-radius',brnd+'px');
+		    $(elem).css('border-color',bcol);
+
+		});
+	});
+</script>
+</head>
+<body>
+<div class="meow">
+
+
+	<header>
+	<h1><img id="title_image" style="width:100%; display: block;" src="images/title.gif" alt="welcome to everydayonecat" /></h1>
+		<nav>
+			<ul class="menyan">
+				<li><a href="about.html" alt="about">About!!!!</a></li>
+				<li style="margin-top:4px"><a href="https://twitter.com/motions_cat" alt="twitter">😺<image src="images/catwitter.png" alt="twitter link" style="margin-left: 4px;" />😹</a></li>
+				<li style="margin-top:4px"><button style="height:24px" id="meow_button">Say Meow</button> <img src="images/mc_sippo.png" style="margin-right: -2px;"/><span id="meow_counter"></span><span id="meow_button_setsumei" style="display: none;">← World Meow Record</span></li>
+				<li style="margin-top:4px; color: #000"><!--a href="catfreedrawing/index.html" alt="catfreedrawing"--><s>Free Drawing!(under construction)</s><!--/a--></li>
+				<!-- li><--a href="http://motions.cat/oekaki2/bbs8/bbsnote.cgi"-><-- s>Free Drawing!(beta)(調整中)</s -><--/a-></li -->
+				<li><a href="index.html" alt="home">← Back to home</a></li>
+			</ul>
+		</nav>
+	</header>
+	<hr> 
+	<h3 style="text-align: center;">＿人人人人＿<br>
+    ＞　CATS　＜<br>
+    ￣Y^Y^Y^Y￣</h3>
+    
+
+    <article class="gifcats" style="margin-left: auto;margin-right: auto; max-width: 744px;">
+    	<img src="images/new12.gif" alt="new icon" data-source="https://www.schoolicons.com/web/icon/new/new.html" /><br>
+    	<div style="background-image: url('images/longiness_top.gif'); background-repeat: no-repeat; background-position: left bottom; padding-left: 64px;">
+    		<a id="0146" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0146.gif"  data-title="「Aerodynamic Baking Marshmallows!」<hr><a href='https://twitter.com/motions_cat/status/1307967811193507840'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0146.src='gif/tmb/0146.gif'" onmouseout="IMG_0146.src='gif/tmb/0146.png'"><img class="eoc" name="IMG_0146" src="gif/tmb/0146.png" alt="0146番目のgif画像"/></a><!--
+    		--><a id="0145" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0145.gif"  data-title="「 🎆🎇🎆🐱🎇🎆🎇 」<hr><a href='https://twitter.com/motions_cat/status/1302160036005904384'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0145.src='gif/tmb/0145.gif'" onmouseout="IMG_0145.src='gif/tmb/0145.png'"><img class="eoc" name="IMG_0145" src="gif/tmb/0145.png" alt="0145番目のgif画像"/></a><!--
+    		--><a id="0144" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0144.gif"  data-title="「Tooth Brushing!」<hr><a href='https://twitter.com/motions_cat/status/1292330265155698688'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0144.src='gif/tmb/0144.gif'" onmouseout="IMG_0144.src='gif/tmb/0144.png'"><img class="eoc" name="IMG_0144" src="gif/tmb/0144.png" alt="0144番目のgif画像"/></a><!--
+    		--><a id="0143" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0143.gif"  data-title="「Sushi🍣Shop!」<hr><a href='https://twitter.com/motions_cat/status/1287558825105448961'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0143.src='gif/tmb/0143.gif'" onmouseout="IMG_0143.src='gif/tmb/0143.png'"><img class="eoc" name="IMG_0143" src="gif/tmb/0143.png" alt="0143番目のgif画像"/></a><!--
+    		--><a id="0142" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0142.gif"  data-title="「Grandchild!」<hr><a href='https://twitter.com/motions_cat/status/1282455195855790080'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0142.src='gif/tmb/0142.gif'" onmouseout="IMG_0142.src='gif/tmb/0142.png'"><img class="eoc" name="IMG_0142" src="gif/tmb/0142.png" alt="0142番目のgif画像"/></a><!--
+    		--><a id="0141" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0141.gif"  data-title="「𝑴𝒐𝒓𝒆 𝑾𝒊𝒏𝒅!」<hr><a href='https://twitter.com/motions_cat/status/1277572528010153984'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0141.src='gif/tmb/0141.gif'" onmouseout="IMG_0141.src='gif/tmb/0141.png'"><img class="eoc" name="IMG_0141" src="gif/tmb/0141.png" alt="0141番目のgif画像"/></a>
+    	</div>
+    	<div style="background-image: url('images/longiness_middle.gif'); background-repeat: no-repeat; background-size: 64px 100%; background-position: left center; padding-left: 64px;">
+	    	<!-- 0140
+	    	--><a id="0140" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0140.gif"  data-title="「visitor on a rainy day!?」<hr><a href='https://twitter.com/motions_cat/status/1268852566395441154'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0140.src='gif/tmb/0140.gif'" onmouseout="IMG_0139.src='gif/tmb/0140.png'"><img class="eoc" name="IMG_0140" src="gif/tmb/0140.png" alt="0140番目のgif画像"/></a><!--
+			--><a id="0139" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0139.gif"  data-title="「🎻Chello!」<hr><a href='https://twitter.com/motions_cat/status/1259649424520654848'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0139.src='gif/tmb/0139.gif'" onmouseout="IMG_0139.src='gif/tmb/0139.png'"><img class="eoc" name="IMG_0139" src="gif/tmb/0139.png" alt="0139番目のgif画像"/></a><!--	
+	    	--><a id="0138" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0138.gif"  data-title="「Want to park!」<hr><a href='https://twitter.com/motions_cat/status/1253481280307466241'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0138.src='gif/tmb/0138.gif'" onmouseout="IMG_0138.src='gif/tmb/0138.png'"><img class="eoc" name="IMG_0138" src="gif/tmb/0138.png" alt="0138番目のgif画像"/></a><!--	
+	    	--><a id="0137" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0137.gif"  data-title="「Baby washing!」<hr><a href='https://twitter.com/motions_cat/status/1249473133024694272'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0137.src='gif/tmb/0137.gif'" onmouseout="IMG_0137.src='gif/tmb/0137.png'"><img class="eoc" name="IMG_0137" src="gif/tmb/0137.png" alt="0137番目のgif画像"/></a><!--	
+	    	--><a id="0136" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0136.gif"  data-title="「Judo!」<hr><a href='https://twitter.com/motions_cat/status/1244608725156913154'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0136.src='gif/tmb/0136.gif'" onmouseout="IMG_0136.src='gif/tmb/0136.png'"><img class="eoc" name="IMG_0136" src="gif/tmb/0136.png" alt="0136番目のgif画像"/></a><!--	
+	    	--><a id="0135" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0135.gif"  data-title="「Happy Meow Y!」<hr><a href='https://twitter.com/motions_cat/status/1212242894297288704'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0135.src='gif/tmb/0135.gif'" onmouseout="IMG_0135.src='gif/tmb/0135.png'"><img class="eoc" name="IMG_0135" src="gif/tmb/0135.png" alt="0135番目のgif画像"/></a><!--	
+	    	--><a id="0134" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0134.gif"  data-title="「🐱🎮🎮🐱!」<hr><a href='https://twitter.com/motions_cat/status/1173004749236391936'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0134.src='gif/tmb/0134.gif'" onmouseout="IMG_0134.src='gif/tmb/0134.png'"><img class="eoc" name="IMG_0134" src="gif/tmb/0134.png" alt="0134番目のgif画像"/></a><!--	
+	    	--><a id="0133" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0133.gif"  data-title="「Pullover!」<hr><a href='https://twitter.com/motions_cat/status/1170633543594041344'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0133.src='gif/tmb/0133.gif'" onmouseout="IMG_0133.src='gif/tmb/0133.png'"><img class="eoc" name="IMG_0133" src="gif/tmb/0133.png" alt="0133番目のgif画像"/></a><!--	
+	    	--><a id="0132" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0132.gif"  data-title="「Veggies Run!」<hr><a href='https://twitter.com/motions_cat/status/1168654836448948224'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0132.src='gif/tmb/0132.gif'" onmouseout="IMG_0132.src='gif/tmb/0132.png'"><img class="eoc" name="IMG_0132" src="gif/tmb/0132.png" alt="0132番目のgif画像"/></a><!--
+	    	--><a id="0131" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0131.gif"  data-title="「🇪‌🇨‌🇴‌🇳‌🇴‌🇲‌🇾 🇨‌🇱‌🇦‌🇸‌🇸!」<hr><a href='https://twitter.com/motions_cat/status/1167206543315652609'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0131.src='gif/tmb/0131.gif'" onmouseout="IMG_0131.src='gif/tmb/0131.png'"><img class="eoc" name="IMG_0131" src="gif/tmb/0131.png" alt="0131番目のgif画像"/></a>
+    	</div>
+    	<div style="background-image: url('images/longiness_middle.gif'); background-repeat: no-repeat; background-size: 64px 100%; background-position: left center; padding-left: 64px;">
+			<!-- 0130
+	    	--><a id="0130" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0130.gif"  data-title="「Beanbag!?」<hr><a href='https://twitter.com/motions_cat/status/1166115606132928523'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0130.src='gif/tmb/0130.gif'" onmouseout="IMG_0130.src='gif/tmb/0130.png'"><img class="eoc" name="IMG_0130" src="gif/tmb/0130.png" alt="0130番目のgif画像"/></a><!--
+	    	--><a id="0129" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0129.gif"  data-title="「Meowin' in the Rain!」<hr><a href='https://twitter.com/motions_cat/status/1163118757222342656'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0129.src='gif/tmb/0129.gif'" onmouseout="IMG_0129.src='gif/tmb/0129.png'"><img class="eoc" name="IMG_0129" src="gif/tmb/0129.png" alt="0129番目のgif画像"/></a><!--
+	    	--><a id="0128" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0128.gif"  data-title="「Long Hot Summer!」<hr><a href='https://twitter.com/motions_cat/status/1162608848873508865'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0128.src='gif/tmb/0128.gif'" onmouseout="IMG_0128.src='gif/tmb/0128.png'"><img class="eoc" name="IMG_0128" src="gif/tmb/0128.png" alt="0128番目のgif画像"/></a><!--
+	    	--><a id="0127" class="eoc-image-link"><img class="eoc" name="IMG_0127" src="gif/tmb/0000.png" alt="0127番目のgif画像"/></a><!--
+	    	--><a id="0126" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0126.gif"  data-title="「Toaster!」<hr><a href='https://twitter.com/motions_cat/status/1122817224652156928'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0126.src='gif/tmb/0126.gif'" onmouseout="IMG_0126.src='gif/tmb/0126.png'"><img class="eoc" name="IMG_0126" src="gif/tmb/0126.png" alt="0126番目のgif画像"/></a><!--
+	    	--><a id="0125" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0125.gif"  data-title="「Face Lost!」<hr><a href='https://twitter.com/motions_cat/status/1121867606040825856'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0125.src='gif/tmb/0125.gif'" onmouseout="IMG_0125.src='gif/tmb/0125.png'"><img class="eoc" name="IMG_0125" src="gif/tmb/0125.png" alt="0125番目のgif画像"/></a><!--
+	    	--><a id="0124" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0124.gif"  data-title="「Save the World!」<hr><a href='https://twitter.com/motions_cat/status/1121348821798096896'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0124.src='gif/tmb/0124.gif'" onmouseout="IMG_0124.src='gif/tmb/0124.png'"><img class="eoc" name="IMG_0124" src="gif/tmb/0124.png" alt="0124番目のgif画像"/></a><!--
+	    	--><a id="0123" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0123.gif"  data-title="「🚃💨🐱💨!」<hr><a href='https://twitter.com/motions_cat/status/1118827914324086784'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0123.src='gif/tmb/0123.gif'" onmouseout="IMG_0123.src='gif/tmb/0123.png'"><img class="eoc" name="IMG_0123" src="gif/tmb/0123.png" alt="0123番目のgif画像"/></a><!--
+	    	--><a id="0122" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0122.gif"  data-title="「Too Meony!」<hr><a href='https://twitter.com/motions_cat/status/1115095776227553280'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0122.src='gif/tmb/0122.gif'" onmouseout="IMG_0122.src='gif/tmb/0122.png'"><img class="eoc" name="IMG_0122" src="gif/tmb/0122.png" alt="0122番目のgif画像"/></a><!--
+	    	--><a id="0121" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0121.gif"  data-title="「Circus🎪!」<hr><a href='https://twitter.com/motions_cat/status/1115045680538476544'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0121.src='gif/tmb/0121.gif'" onmouseout="IMG_0121.src='gif/tmb/0121.png'"><img class="eoc" name="IMG_0121" src="gif/tmb/0121.png" alt="0121番目のgif画像"/></a>
+			<!-- 0120
+			--><a id="0120" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0120.gif"  data-title="「Müller-Lyer Illusion!」<hr><a href='https://twitter.com/motions_cat/status/1114763977555189760'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0120.src='gif/tmb/0120.gif'" onmouseout="IMG_0120.src='gif/tmb/0120.png'"><img class="eoc" name="IMG_0120" src="gif/tmb/0120.png" alt="0120番目のgif画像"/></a><!--
+			--><a id="0119" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0119.gif"  data-title="「Duvet Express!」<hr><a href='https://twitter.com/motions_cat/status/1098964928797519872'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0119.src='gif/tmb/0119.gif'" onmouseout="IMG_0119.src='gif/tmb/0119.png'"><img class="eoc" name="IMG_0119" src="gif/tmb/0119.png" alt="0119番目のgif画像"/></a><!--
+			--><a id="0118" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0118.gif"  data-title="「Skyyyyyyyyyyyeeeeeeeeeooooooooooowwwwwwwww!」<hr><a href='https://twitter.com/motions_cat/status/1098461014855565313'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0118.src='gif/tmb/0118.gif'" onmouseout="IMG_0118.src='gif/tmb/0118.png'"><img class="eoc" name="IMG_0118" src="gif/tmb/0118.png" alt="0118番目のgif画像"/></a><!--
+			--><a id="0117" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0117.gif"  data-title="「**!」<hr><a href='https://twitter.com/motions_cat/status/1097526208777007105'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0117.src='gif/tmb/0117.gif'" onmouseout="IMG_0117.src='gif/tmb/0117.png'"><img class="eoc" name="IMG_0117" src="gif/tmb/0117.png" alt="0117番目のgif画像"/></a><!--
+			--><a id="0116" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0116.gif"  data-title="「Crab Attack!」<hr><a href='https://twitter.com/motions_cat/status/1097149913123545090'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0116.src='gif/tmb/0116.gif'" onmouseout="IMG_0116.src='gif/tmb/0116.png'"><img class="eoc" name="IMG_0116" src="gif/tmb/0116.png" alt="0116番目のgif画像"/></a><!--
+			--><a id="0115" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0115.gif"  data-title="「Endless Bathtime!」<hr><a href='https://twitter.com/motions_cat/status/1094501123312955393'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0115.src='gif/tmb/0115.gif'" onmouseout="IMG_0115.src='gif/tmb/0115.png'"><img class="eoc" name="IMG_0115" src="gif/tmb/0115.png" alt="0115番目のgif画像"/></a><!--
+			--><a id="0114" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0114.gif"  data-title="「Broken Mind!」<hr><a href='https://twitter.com/motions_cat/status/1092073200463241216'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0114.src='gif/tmb/0114.gif'" onmouseout="IMG_0114.src='gif/tmb/0114.png'"><img class="eoc" name="IMG_0114" src="gif/tmb/0114.png" alt="0114番目のgif画像"/></a><!--
+			--><a id="0113" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0113.gif"  data-title="「MotorcyclingⅡ」<hr><a href='https://twitter.com/motions_cat/status/1081813839572692995'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0113.src='gif/tmb/0113.gif'" onmouseout="IMG_0113.src='gif/tmb/0113.png'"><img class="eoc" name="IMG_0113" src="gif/tmb/0113.png" alt="0113番目のgif画像"/></a><!--
+			--><a id="0112" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0112.gif"  data-title="「Catch the Moon!」<hr><a href='https://twitter.com/motions_cat/status/1081434067088769024'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0112.src='gif/tmb/0112.gif'" onmouseout="IMG_0112.src='gif/tmb/0112.png'"><img class="eoc" name="IMG_0112" src="gif/tmb/0112.png" alt="0112番目のgif画像"/></a><!--
+			--><a id="0111" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0111.gif"  data-title="「Butterfly!」<hr><a href='https://twitter.com/motions_cat/status/1043099832250904577'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0111.src='gif/tmb/0111.gif'" onmouseout="IMG_0111.src='gif/tmb/0111.png'"><img class="eoc" name="IMG_0111" src="gif/tmb/0111.png" alt="0111番目のgif画像"/></a>
+			<!-- 0110
+			--><a id="0110" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0110.gif"  data-title="「Baby Adventure!」<hr><a href='https://twitter.com/motions_cat/status/1042787064775827456'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0110.src='gif/tmb/0110.gif'" onmouseout="IMG_0110.src='gif/tmb/0110.png'"><img class="eoc" name="IMG_0110" src="gif/tmb/0110.png" alt="0110番目のgif画像"/></a><!--
+			--><a id="0109" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0109.gif"  data-title="「Play with Me!」<hr><a href='https://twitter.com/motions_cat/status/1042393019914182657'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0109.src='gif/tmb/0109.gif'" onmouseout="IMG_0109.src='gif/tmb/0109.png'"><img class="eoc" name="IMG_0109" src="gif/tmb/0109.png" alt="0109番目のgif画像"/></a><!--
+			--><a id="0108" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0108.gif"  data-title="「Dungeon Trap!」<hr><a href='https://twitter.com/motions_cat/status/982332324221104128'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0108.src='gif/tmb/0108.gif'" onmouseout="IMG_0108.src='gif/tmb/0108.png'"><img class="eoc" name="IMG_0108" src="gif/tmb/0108.png" alt="0108番目のgif画像"/></a><!--
+			--><a id="0107" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0107.gif"  data-title="「Psychokinesis!」<hr><a href='https://twitter.com/motions_cat/status/982047218382204928'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0107.src='gif/tmb/0107.gif'" onmouseout="IMG_0107.src='gif/tmb/0107.png'"><img class="eoc" name="IMG_0107" src="gif/tmb/0107.png" alt="0107番目のgif画像"/></a><!--
+			--><a id="0106" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0106.gif"  data-title="「Sogeki-syu!」<hr><a href='https://twitter.com/motions_cat/status/981243601853202432'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0106.src='gif/tmb/0106.gif'" onmouseout="IMG_0106.src='gif/tmb/0106.png'"><img class="eoc" name="IMG_0106" src="gif/tmb/0106.png" alt="0106番目のgif画像"/></a><!--
+			--><a id="0105" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0105.gif"  data-title="「Good Luck!」<hr><a href='https://twitter.com/motions_cat/status/980611235837128705'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0105.src='gif/tmb/0105.gif'" onmouseout="IMG_0105.src='gif/tmb/0105.png'"><img class="eoc" name="IMG_0105" src="gif/tmb/0105.png" alt="0105番目のgif画像"/></a><!--
+			--><a id="0104" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0104.gif"  data-title="「Journey!」<hr><a href='https://twitter.com/motions_cat/status/980202265683181568'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0104.src='gif/tmb/0104.gif'" onmouseout="IMG_0104.src='gif/tmb/0104.png'"><img class="eoc" name="IMG_0104" src="gif/tmb/0104.png" alt="0104番目のgif画像"/></a><!--
+			--><a id="0103" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0103.gif"  data-title="「Virus!」<hr><a href='https://twitter.com/motions_cat/status/953423850544353280'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0103.src='gif/tmb/0103.gif'" onmouseout="IMG_0103.src='gif/tmb/0103.png'"><img class="eoc" name="IMG_0103" src="gif/tmb/0103.png" alt="0103番目のgif画像"/></a><!--
+			--><a id="0102" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0102.gif"  data-title="「Jamming!」<hr><a href='https://twitter.com/motions_cat/status/952366550786310144'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0102.src='gif/tmb/0102.gif'" onmouseout="IMG_0102.src='gif/tmb/0102.png'"><img class="eoc" name="IMG_0102" src="gif/tmb/0102.png" alt="0102番目のgif画像"/></a><!--
+			--><a id="0101" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0101.gif"  data-title="「Continent!」<hr><a href='https://twitter.com/motions_cat/status/951935053797314560'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0101.src='gif/tmb/0101.gif'" onmouseout="IMG_0101.src='gif/tmb/0101.png'"><img class="eoc" name="IMG_0101" src="gif/tmb/0101.png" alt="0101番目のgif画像"/></a>
+			<div style="text-align: center;"> --- 0100😹 --- </div>
+			<!-- 0100
+			--><a id="0100" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0100.gif"  data-title="「Happy 100 Cats!」<hr><a href='https://twitter.com/motions_cat/status/951587320636981248'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0100.src='gif/tmb/0100.gif'" onmouseout="IMG_0100.src='gif/tmb/0100.png'"><img class="eoc" name="IMG_0100" src="gif/tmb/0100.png" alt="0100番目のgif画像"/></a><!--
+			--><a id="0099" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0099.gif"  data-title="「Cat Between Dogs!」<hr><a href='https://twitter.com/motions_cat/status/950731124765945857'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0099.src='gif/tmb/0099.gif'" onmouseout="IMG_0099.src='gif/tmb/0099.png'"><img class="eoc" name="IMG_0099" src="gif/tmb/0099.png" alt="0099番目のgif画像"/></a><!--
+			--><a id="0098" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0098.gif"  data-title="「Domination!」<hr><a href='https://twitter.com/motions_cat/status/950523501965852672'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0098.src='gif/tmb/0098.gif'" onmouseout="IMG_0098.src='gif/tmb/0098.png'"><img class="eoc" name="IMG_0098" src="gif/tmb/0098.png" alt="0098番目のgif画像"/></a><!--
+			--><a id="0097" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0097.gif"  data-title="「Archery!」<hr><a href='https://twitter.com/motions_cat/status/930389806655217665'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0097.src='gif/tmb/0097.gif'" onmouseout="IMG_0097.src='gif/tmb/0097.png'"><img class="eoc" name="IMG_0097" src="gif/tmb/0097.png" alt="0097番目のgif画像"/></a><!--
+			--><a id="0096" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0096.gif"  data-title="「Booogenyaaaan!」<hr><a href='https://twitter.com/motions_cat/status/951199501070434304'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0096.src='gif/tmb/0096.gif'" onmouseout="IMG_0096.src='gif/tmb/0096.png'"><img class="eoc" name="IMG_0096" src="gif/tmb/0096.png" alt="0096番目のgif画像"/></a><!--
+			--><a id="0095" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0095.gif"  data-title="「Jump:3!」<hr><a href='https://twitter.com/motions_cat/status/926867697941413888'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0095.src='gif/tmb/0095.gif'" onmouseout="IMG_0095.src='gif/tmb/0095.png'"><img class="eoc" name="IMG_0095" src="gif/tmb/0095.png" alt="0095番目のgif画像"/></a><!--
+			--><a id="0094" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0094.gif"  data-title="「Dive in to the WEEKEND!」<hr><a href='https://twitter.com/motions_cat/status/926554899059314688'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0094.src='gif/tmb/0094.gif'" onmouseout="IMG_0094.src='gif/tmb/0094.png'"><img class="eoc" name="IMG_0094" src="gif/tmb/0094.png" alt="0094番目のgif画像"/></a><!--
+			--><a id="0093" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0093.gif"  data-title="「Shikigameow!」<hr><a href='https://twitter.com/motions_cat/status/925675777688875008'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0093.src='gif/tmb/0093.gif'" onmouseout="IMG_0093.src='gif/tmb/0093.png'"><img class="eoc" name="IMG_0093" src="gif/tmb/0093.png" alt="0093番目のgif画像"/></a><!--
+			--><a id="0092" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0092.gif"  data-title="「Typhooooon!」<hr><a href='https://twitter.com/motions_cat/status/924133229585580034'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0092.src='gif/tmb/0092.gif'" onmouseout="IMG_0092.src='gif/tmb/0092.png'"><img class="eoc" name="IMG_0092" src="gif/tmb/0092.png" alt="0092番目のgif画像"/></a><!--
+			--><a id="0091" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0091.gif"  data-title="「Lighthouse!」<hr><a href='https://twitter.com/motions_cat/status/923922300386152454'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0091.src='gif/tmb/0091.gif'" onmouseout="IMG_0091.src='gif/tmb/0091.png'"><img class="eoc" name="IMG_0091" src="gif/tmb/0091.png" alt="0091番目のgif画像"/></a>
+			<!-- 0090
+			--><a id="0090" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0090.gif"  data-title="「*!」<hr><a href='https://twitter.com/motions_cat/status/922493178460094464'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0090.src='gif/tmb/0090.gif'" onmouseout="IMG_0090.src='gif/tmb/0090.png'"><img class="eoc" name="IMG_0090" src="gif/tmb/0090.png" alt="0090番目のgif画像"/></a><!--
+			--><a id="0089" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0089.gif"  data-title="「Logicat!」<hr><a href='https://twitter.com/motions_cat/status/922493178460094464'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0089.src='gif/tmb/0089.gif'" onmouseout="IMG_0089.src='gif/tmb/0089.png'"><img class="eoc" name="IMG_0089" src="gif/tmb/0089.png" alt="0089番目のgif画像"/></a><!--
+			--><a id="0088" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0088.gif"  data-title="「Gravitational Waaaave!」<hr><a href='https://twitter.com/motions_cat/status/921734130949177344'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0088.src='gif/tmb/0088.gif'" onmouseout="IMG_0088.src='gif/tmb/0088.png'"><img class="eoc" name="IMG_0088" src="gif/tmb/0088.png" alt="0088番目のgif画像"/></a><!--
+			--><a id="0087" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0087.gif"  data-title="「Boxes!」<hr><a href='https://twitter.com/motions_cat/status/921298848466722817'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0087.src='gif/tmb/0087.gif'" onmouseout="IMG_0087.src='gif/tmb/0087.png'"><img class="eoc" name="IMG_0087" src="gif/tmb/0087.png" alt="0087番目のgif画像"/></a><!--
+			--><a id="0086" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0086.gif"  data-title="「Coffee Bath!」<hr><a href='https://twitter.com/motions_cat/status/921008967358201856'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0086.src='gif/tmb/0086.gif'" onmouseout="IMG_0086.src='gif/tmb/0086.png'"><img class="eoc" name="IMG_0086" src="gif/tmb/0086.png" alt="0086番目のgif画像"/></a><!--
+			--><a id="0085" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0085.gif"  data-title="「Dragons!」<hr><a href='https://twitter.com/motions_cat/status/919995357358055425'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0085.src='gif/tmb/0085.gif'" onmouseout="IMG_0085.src='gif/tmb/0085.png'"><img class="eoc" name="IMG_0085" src="gif/tmb/0085.png" alt="0085番目のgif画像"/></a><!--
+			--><a id="0084" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0084.gif"  data-title="「<span>🐱🔃🎣</span>!」<hr><a href='https://twitter.com/motions_cat/status/919590607147773953'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0084.src='gif/tmb/0084.gif'" onmouseout="IMG_0084.src='gif/tmb/0084.png'"><img class="eoc" name="IMG_0084" src="gif/tmb/0084.png" alt="0084番目のgif画像"/></a><!--
+			--><a id="0083" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0083.gif"  data-title="「Fruits!」<hr><a href='https://twitter.com/motions_cat/status/917144435619545089'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0083.src='gif/tmb/0083.gif'" onmouseout="IMG_0083.src='gif/tmb/0083.png'"><img class="eoc" name="IMG_0083" src="gif/tmb/0083.png" alt="0083番目のgif画像"/></a><!--
+			--><a id="0082" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0082.gif"  data-title="「DNyA!」<hr><a href='https://twitter.com/motions_cat/status/916586367924133888'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0082.src='gif/tmb/0082.gif'" onmouseout="IMG_0082.src='gif/tmb/0082.png'"><img class="eoc" name="IMG_0082" src="gif/tmb/0082.png" alt="0082番目のgif画像"/></a><!--
+			--><a id="0081" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0081.gif"  data-title="「Too!」<hr><a href='https://twitter.com/motions_cat/status/916431477348241408'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0081.src='gif/tmb/0081.gif'" onmouseout="IMG_0081.src='gif/tmb/0081.png'"><img class="eoc" name="IMG_0081" src="gif/tmb/0081.png" alt="0081番目のgif画像"/></a>
+			<!-- 0080
+			--><a id="0080" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0080.gif"  data-title="「Electric Power!」<hr><a href='https://twitter.com/motions_cat/status/915744494514925569'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0080.src='gif/tmb/0080.gif'" onmouseout="IMG_0080.src='gif/tmb/0080.png'"><img class="eoc" name="IMG_0080" src="gif/tmb/0080.png" alt="0080番目のgif画像"/></a><!--
+			--><a id="0079" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0079.gif"  data-title="「Looooooooooooooooooooooooooooooooooooooooooooooooooong!」<hr><a href='https://twitter.com/motions_cat/status/915319971168710656'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0079.src='gif/tmb/0079.gif'" onmouseout="IMG_0079.src='gif/tmb/0079.png'"><img class="eoc" name="IMG_0079" src="gif/tmb/0079.png" alt="0079番目のgif画像"/></a><!--
+			--><a id="0078" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0078.gif"  data-title="「Dreamers High!」<hr><a href='https://twitter.com/motions_cat/status/915155936649478144'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0078.src='gif/tmb/0078.gif'" onmouseout="IMG_0078.src='gif/tmb/0078.png'"><img class="eoc" name="IMG_0078" src="gif/tmb/0078.png" alt="0078番目のgif画像"/></a><!--
+			--><a id="0077" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0077.gif"  data-title="「Escape!」<hr><a href='https://twitter.com/motions_cat/status/913827289380438016'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0077.src='gif/tmb/0077.gif'" onmouseout="IMG_0077.src='gif/tmb/0077.png'"><img class="eoc" name="IMG_0077" src="gif/tmb/0077.png" alt="0077番目のgif画像"/></a><!--
+			--><a id="0076" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0076.gif"  data-title="「Cicatda!」<hr><a href='https://twitter.com/motions_cat/status/912982224294748161'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0076.src='gif/tmb/0076.gif'" onmouseout="IMG_0076.src='gif/tmb/0076.png'"><img class="eoc" name="IMG_0076" src="gif/tmb/0076.png" alt="0076番目のgif画像"/></a><!--
+			--><a id="0075" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0075.gif"  data-title="「Bonfire Lit!」<hr><a href='https://twitter.com/motions_cat/status/908115526018142213'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0075.src='gif/tmb/0075.gif'" onmouseout="IMG_0075.src='gif/tmb/0075.png'"><img class="eoc" name="IMG_0075" src="gif/tmb/0075.png" alt="0075番目のgif画像"/></a><!--
+			--><a id="0074" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0074.gif"  data-title="「Dangerous Intersection!」<hr><a href='https://twitter.com/motions_cat/status/908115526018142213'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0074.src='gif/tmb/0074.gif'" onmouseout="IMG_0074.src='gif/tmb/0074.png'"><img class="eoc" name="IMG_0074" src="gif/tmb/0074.png" alt="0074番目のgif画像"/></a><!--
+			--><a id="0073" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0073.gif"  data-title="「Coffee Break!」<hr><a href='https://twitter.com/motions_cat/status/904530007225131008'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0073.src='gif/tmb/0073.gif'" onmouseout="IMG_0073.src='gif/tmb/0073.png'"><img class="eoc" name="IMG_0073" src="gif/tmb/0073.png" alt="0073番目のgif画像"/></a><!--
+			--><a id="0072" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0072.gif"  data-title="「Landolt C!」<hr><a href='https://twitter.com/motions_cat/status/903142916377395200'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0072.src='gif/tmb/0072.gif'" onmouseout="IMG_0072.src='gif/tmb/0072.png'"><img class="eoc" name="IMG_0071" src="gif/tmb/0072.png" alt="0072番目のgif画像"/></a><!--
+			--><a id="0071" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0071.gif"  data-title="「Cats are BUSY!!!!」<hr><a href='https://twitter.com/motions_cat/status/902190056848232448'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0071.src='gif/tmb/0071.gif'" onmouseout="IMG_0071.src='gif/tmb/0071.png'"><img class="eoc" name="IMG_0071" src="gif/tmb/0071.png" alt="0071番目のgif画像"/></a>
+			<!-- 0070
+			--><a id="0070" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0070.gif"  data-title="「Motorcycling!」<hr><a href='https://twitter.com/motions_cat/status/901555446326083584'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0070.src='gif/tmb/0070.gif'" onmouseout="IMG_0070.src='gif/tmb/0070.png'"><img class="eoc" name="IMG_0070" src="gif/tmb/0070.png" alt="0070番目のgif画像"/></a><!--
+			--><a id="0069" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0069.gif"  data-title="「The Pinch!」<hr><a href='https://twitter.com/motions_cat/status/900705576664969217'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0069.src='gif/tmb/0069.gif'" onmouseout="IMG_0069.src='gif/tmb/0069.png'"><img class="eoc" name="IMG_0069" src="gif/tmb/0069.png" alt="0069番目のgif画像"/></a><!--
+			--><a id="0068" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0068.gif"  data-title="「Klein Bottle!」<hr><a href='https://twitter.com/motions_cat/status/899997847499624449'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0068.src='gif/tmb/0068.gif'" onmouseout="IMG_0068.src='gif/tmb/0068.png'"><img class="eoc" name="IMG_0068" src="gif/tmb/0068.png" alt="0068番目のgif画像"/></a><!--
+			--><a id="0067" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0067.gif"  data-title="「Jupiter!」<hr><a href='https://twitter.com/motions_cat/status/899675500947296257'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0067.src='gif/tmb/0067.gif'" onmouseout="IMG_0067.src='gif/tmb/0067.png'"><img class="eoc" name="IMG_0067" src="gif/tmb/0067.png" alt="0067番目のgif画像"/></a><!--
+			--><a id="0066" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0066.gif"  data-title="「Poison Swamp!」<hr><a href='https://twitter.com/motions_cat/status/898936783915765762'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0066.src='gif/tmb/0066.gif'" onmouseout="IMG_0066.src='gif/tmb/0066.png'"><img class="eoc" name="IMG_0066" src="gif/tmb/0066.png" alt="0066番目のgif画像"/></a><!--
+			--><a id="0065" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0065.gif"  data-title="「Sea!」<hr><a href='https://twitter.com/motions_cat/status/898598468049973248'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0065.src='gif/tmb/0065.gif'" onmouseout="IMG_0065.src='gif/tmb/0065.png'"><img class="eoc" name="IMG_0065" src="gif/tmb/0065.png" alt="0065番目のgif画像"/></a><!--
+			--><a id="0064" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0064.gif"  data-title="「Night Drive!」<hr><a href='https://twitter.com/motions_cat/status/897423886387527680'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0064.src='gif/tmb/0064.gif'" onmouseout="IMG_0064.src='gif/tmb/0064.png'"><img class="eoc" name="IMG_0064" src="gif/tmb/0064.png" alt="0064番目のgif画像"/></a><!--
+			--><a id="0063" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0063.gif"  data-title="「Cat Factory!」<hr><a href='https://twitter.com/motions_cat/status/896997817335533568'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0063.src='gif/tmb/0063.gif'" onmouseout="IMG_0063.src='gif/tmb/0063.png'"><img class="eoc" name="IMG_0063" src="gif/tmb/0063.png" alt="0063番目のgif画像"/></a><!--
+			--><a id="0062" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0062.gif"  data-title="「Whac-A-Mole!」<hr><a href='https://twitter.com/motions_cat/status/896303299854336000'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0062.src='gif/tmb/0062.gif'" onmouseout="IMG_0062.src='gif/tmb/0062.png'"><img class="eoc" name="IMG_0062" src="gif/tmb/0062.png" alt="0062番目のgif画像"/></a><!--
+			--><a id="0061" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0061.gif"  data-title="「Tunneling Effect!」<hr><a href='https://twitter.com/motions_cat/status/895774916439547904'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0061.src='gif/tmb/0061.gif'" onmouseout="IMG_0061.src='gif/tmb/0061.png'"><img class="eoc" name="IMG_0061" src="gif/tmb/0061.png" alt="0061番目のgif画像"/></a>
+			<!-- 0060
+			--><a id="0060" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0060.gif"  data-title="「Sushi!」<hr><a href='https://twitter.com/motions_cat/status/895502502874853377'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0060.src='gif/tmb/0060.gif'" onmouseout="IMG_0060.src='gif/tmb/0060.png'"><img class="eoc" name="IMG_0060" src="gif/tmb/0060.png" alt="0060番目のgif画像"/></a><!--
+			--><a id="0059" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0059.gif"  data-title="「Self-Propelled Cat Gun!」<hr><a href='https://twitter.com/motions_cat/status/895048665617661952'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0059.src='gif/tmb/0059.gif'" onmouseout="IMG_0059.src='gif/tmb/0059.png'"><img class="eoc" name="IMG_0059" src="gif/tmb/0059.png" alt="0059番目のgif画像"/></a><!--
+			--><a id="0058" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0058.gif"  data-title="「Cat in the Typhoon!」<hr><a href='https://twitter.com/motions_cat/status/894644154629632001'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0058.src='gif/tmb/0058.gif'" onmouseout="IMG_0058.src='gif/tmb/0058.png'"><img class="eoc" name="IMG_0058" src="gif/tmb/0058.png" alt="0058番目のgif画像"/></a><!--
+			--><a id="0057" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0057.gif"  data-title="「Nyanburger!」<hr><a href='https://twitter.com/motions_cat/status/894084603765501952'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0057.src='gif/tmb/0057.gif'" onmouseout="IMG_0057.src='gif/tmb/0057.png'"><img class="eoc" name="IMG_0057" src="gif/tmb/0057.png" alt="0057番目のgif画像"/></a><!--
+			--><a id="0056" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0056.gif"  data-title="「Seesaw!」<hr><a href='https://twitter.com/motions_cat/status/893851836444061696'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0056.src='gif/tmb/0056.gif'" onmouseout="IMG_0056.src='gif/tmb/0056.png'"><img class="eoc" name="IMG_0056" src="gif/tmb/0056.png" alt="0056番目のgif画像"/></a><!--
+			--><a id="0055" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0055.gif"  data-title="「Treadmill!」<hr><a href='https://twitter.com/motions_cat/status/893537023968948224'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0055.src='gif/tmb/0055.gif'" onmouseout="IMG_0055.src='gif/tmb/0055.png'"><img class="eoc" name="IMG_0055" src="gif/tmb/0055.png" alt="0055番目のgif画像"/></a><!--
+			--><a id="0054" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0054.gif"  data-title="「Bath!」<hr><a href='https://twitter.com/motions_cat/status/893216520288911360'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0054.src='gif/tmb/0054.gif'" onmouseout="IMG_0054.src='gif/tmb/0054.png'"><img class="eoc" name="IMG_0054" src="gif/tmb/0054.png" alt="0054番目のgif画像"/></a><!--
+			--><a id="0053" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0053.gif"  data-title="「Mission: Possible!」<hr><a href='https://twitter.com/motions_cat/status/892694066067939328'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0053.src='gif/tmb/0053.gif'" onmouseout="IMG_0053.src='gif/tmb/0053.png'"><img class="eoc" name="IMG_0053" src="gif/tmb/0053.png" alt="0053番目のgif画像"/></a><!--
+			--><a id="0052" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0052.gif"  data-title="「Cat on the Moon!」<hr><a href='https://twitter.com/motions_cat/status/892070814975090688'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0052.src='gif/tmb/0052.gif'" onmouseout="IMG_0052.src='gif/tmb/0052.png'"><img class="eoc" name="IMG_0052" src="gif/tmb/0052.png" alt="0052番目のgif画像"/></a><!--
+			--><a id="0051" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0051.gif"  data-title="「Summer!」<hr><a href='https://twitter.com/motions_cat/status/891633998102802433'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0051.src='gif/tmb/0051.gif'" onmouseout="IMG_0051.src='gif/tmb/0051.png'"><img class="eoc" name="IMG_0051" src="gif/tmb/0051.png" alt="0051番目のgif画像"/></a>
+			<div style="text-align: center;"> --- 0050😺 --- </div>
+			<!-- 0050
+			--><a id="0050" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0050.gif"  data-title="「Stargazy Pie!」<hr><a href='https://twitter.com/motions_cat/status/891174645696679936'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0050.src='gif/tmb/0050.gif'" onmouseout="IMG_0050.src='gif/tmb/0050.png'"><img class="eoc" name="IMG_0050" src="gif/tmb/0050.png" alt="0050番目のgif画像"/></a><!--
+			--><a id="0049" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0049.gif"  data-title="「Cats are Busy!」<hr><a href='https://twitter.com/motions_cat/status/882948569916874752'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0049.src='gif/tmb/0049.gif'" onmouseout="IMG_0049.src='gif/tmb/0049.png'"><img class="eoc" name="IMG_0049" src="gif/tmb/0049.png" alt="0049番目のgif画像"/></a><!--
+			--><a id="0048" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0048.gif"  data-title="「Donuts!」<hr><a href='https://twitter.com/motions_cat/status/882512092300926977'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0048.src='gif/tmb/0048.gif'" onmouseout="IMG_0048.src='gif/tmb/0048.png'"><img class="eoc" name="IMG_0048" src="gif/tmb/0048.png" alt="0048番目のgif画像"/></a><!--
+			--><a id="0047" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0047.gif"  data-title="「Cat Slavers!」<hr><a href='https://twitter.com/motions_cat/status/882505830888685568'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0047.src='gif/tmb/0047.gif'" onmouseout="IMG_0047.src='gif/tmb/0047.png'"><img class="eoc" name="IMG_0047" src="gif/tmb/0047.png" alt="0047番目のgif画像"/></a><!--
+			--><a id="0046" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0046.gif"  data-title="「Disco!」<hr><a href='https://twitter.com/motions_cat/status/882281900101967872'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0046.src='gif/tmb/0046.gif'" onmouseout="IMG_0046.src='gif/tmb/0046.png'"><img class="eoc" name="IMG_0046" src="gif/tmb/0046.png" alt="0046番目のgif画像"/></a><!--
+			--><a id="0045" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0045.gif"  data-title="「Meteor!」<hr><a href='https://twitter.com/motions_cat/status/881735565564985344'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0045.src='gif/tmb/0045.gif'" onmouseout="IMG_0045.src='gif/tmb/0045.png'"><img class="eoc" name="IMG_0045" src="gif/tmb/0045.png" alt="0045番目のgif画像"/></a><!--
+			--><a id="0044" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0044.gif"  data-title="「雑巾がけ!」<hr>（re-make <a href='https://twitter.com/motions_cat/status/880348586436734976'>4K</a>)" onmouseover="IMG_0044.src='gif/tmb/0044.gif'" onmouseout="IMG_0044.src='gif/tmb/0044.png'"><img class="eoc" name="IMG_0044" src="gif/tmb/0044.png" alt="0044番目のgif画像"/></a><!--
+			--><a id="0043" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0043.gif"  data-title="「Waaaaa!」<hr><a href='https://twitter.com/motions_cat/status/879963288334815234'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0043.src='gif/tmb/0043.gif'" onmouseout="IMG_0043.src='gif/tmb/0043.png'"><img class="eoc" name="IMG_0043" src="gif/tmb/0043.png" alt="0043番目のgif画像"/></a><!--
+			--><a id="0042" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0042.gif"  data-title="「Automatic Cat Gun!」<hr><a href='https://twitter.com/motions_cat/status/879473702055813120'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0042.src='gif/tmb/0042.gif'" onmouseout="IMG_0042.src='gif/tmb/0042.png'"><img class="eoc" name="IMG_0042" src="gif/tmb/0042.png" alt="0042番目のgif画像"/></a><!--
+			--><a id="0041" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0041.gif"  data-title="「Fishing!」<hr><a href='https://twitter.com/motions_cat/status/879067411881771008'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0041.src='gif/tmb/0041.gif'" onmouseout="IMG_0041.src='gif/tmb/0041.png'"><img class="eoc" name="IMG_0041" src="gif/tmb/0041.png" alt="0041番目のgif画像"/></a>
+			<!-- 0040
+			--><a id="0040" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0040.gif"  data-title="「VR in the Dark!」<hr><a href='https://twitter.com/motions_cat/status/878188198333005829'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0040.src='gif/tmb/0040.gif'" onmouseout="IMG_0040.src='gif/tmb/0040.png'"><img class="eoc" name="IMG_0040" src="gif/tmb/0040.png" alt="0040番目のgif画像"/></a><!--
+			--><a id="0039" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0039.gif"  data-title="「筋トレ!」<hr><a href='https://twitter.com/motions_cat/status/877779531410489346'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0039.src='gif/tmb/0039.gif'" onmouseout="IMG_0039.src='gif/tmb/0039.png'"><img class="eoc" name="IMG_0039" src="gif/tmb/0039.png" alt="0039番目のgif画像"/></a><!--
+			--><a id="0038" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0038.gif"  data-title="「Drunken!」<hr><a href='https://twitter.com/motions_cat/status/877572733281763328'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0038.src='gif/tmb/0038.gif'" onmouseout="IMG_0038.src='gif/tmb/0038.png'"><img class="eoc" name="IMG_0038" src="gif/tmb/0038.png" alt="0038番目のgif画像"/></a><!--
+			--><a id="0037" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0037.gif"  data-title="「Bar!」<hr><a href='https://twitter.com/motions_cat/status/877138162480447488'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0037.src='gif/tmb/0037.gif'" onmouseout="IMG_0037.src='gif/tmb/0037.png'"><img class="eoc" name="IMG_0037" src="gif/tmb/0037.png" alt="0037番目のgif画像"/></a><!--
+			--><a id="0036" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0036.gif"  data-title="「Pizza∞!」<hr><a href='https://twitter.com/motions_cat/status/876788332734197760'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0036.src='gif/tmb/0036.gif'" onmouseout="IMG_0036.src='gif/tmb/0036.png'"><img class="eoc" name="IMG_0036" src="gif/tmb/0036.png" alt="0036番目のgif画像"/></a><!--
+			--><a id="0035" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0035.gif"  data-title="「Hoppers!」<hr><a href='https://twitter.com/motions_cat/status/876409521945460736'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0035.src='gif/tmb/0035.gif'" onmouseout="IMG_0035.src='gif/tmb/0035.png'"><img class="eoc" name="IMG_0035" src="gif/tmb/0035.png" alt="0035番目のgif画像"/></a><!--
+			--><a id="0034" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0034.gif"  data-title="「UFO Catcher!」<hr><a href='https://twitter.com/motions_cat/status/876018668030664704'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0034.src='gif/tmb/0034.gif'" onmouseout="IMG_0034.src='gif/tmb/0034.png'"><img class="eoc" name="IMG_0034" src="gif/tmb/0034.png" alt="0034番目のgif画像"/></a><!--
+			--><a id="0033" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0033.gif"  data-title="「Undergnyaund!」<hr><a href='https://twitter.com/motions_cat/status/875698595101528064'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0033.src='gif/tmb/0033.gif'" onmouseout="IMG_0033.src='gif/tmb/0033.png'"><img class="eoc" name="IMG_0033" src="gif/tmb/0033.png" alt="0033番目のgif画像"/></a><!--
+			--><a id="0032" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0032.gif"  data-title="「Cat Gun!!」<hr><a href='https://twitter.com/motions_cat/status/875372524179148800'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0032.src='gif/tmb/0032.gif'" onmouseout="IMG_0032.src='gif/tmb/0032.png'"><img class="eoc" name="IMG_0032" src="gif/tmb/0032.png" alt="0032番目のgif画像"/></a><!--
+			--><a id="0031" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0031.gif"  data-title="「PingPong!」<hr><a href='https://twitter.com/motions_cat/status/874920592000110592'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0031.src='gif/tmb/0031.gif'" onmouseout="IMG_0031.src='gif/tmb/0031.png'"><img class="eoc" name="IMG_0031" src="gif/tmb/0031.png" alt="0031番目のgif画像"/></a>
+			<!-- 0030
+			--><a id="0030" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0030.gif"  data-title="「30回記念!」<hr><a href='https://twitter.com/motions_cat/status/874203771009613824'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0030.src='gif/tmb/0030.gif'" onmouseout="IMG_0030.src='gif/tmb/0030.png'"><img class="eoc" name="IMG_0030" src="gif/tmb/0030.png" alt="0030番目のgif画像"/></a><!--
+			--><a id="0029" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0029.gif"  data-title="「Show Time!」<hr><a href='https://twitter.com/motions_cat/status/873933146311360513'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0029.src='gif/tmb/0029.gif'" onmouseout="IMG_0029.src='gif/tmb/0029.png'"><img class="eoc" name="IMG_0029" src="gif/tmb/0029.png" alt="0029番目のgif画像"/></a><!--
+			--><a id="0028" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0028.gif"  data-title="「禅!」<hr><a href='https://twitter.com/motions_cat/status/873491879052025856'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0028.src='gif/tmb/0028.gif'" onmouseout="IMG_0028.src='gif/tmb/0028.png'"><img class="eoc" name="IMG_0028" src="gif/tmb/0028.png" alt="0028番目のgif画像"/></a><!--
+			--><a id="0027" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0027.gif"  data-title="「♡♥♥!」<hr><a href='https://twitter.com/motions_cat/status/873101476364562433'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0027.src='gif/tmb/0027.gif'" onmouseout="IMG_0027.src='gif/tmb/0027.png'"><img class="eoc" name="IMG_0027" src="gif/tmb/0027.png" alt="0027番目のgif画像"/></a><!--
+			--><a id="0026" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0026.gif"  data-title="「UFO!」<hr><a href='https://twitter.com/motions_cat/status/872560919548575744'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0026.src='gif/tmb/0026.gif'" onmouseout="IMG_0026.src='gif/tmb/0026.png'"><img class="eoc" name="IMG_0026" src="gif/tmb/0026.png" alt="0026番目のgif画像"/></a><!--
+			--><a id="0025" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0025.gif"  data-title="「無題!」<hr><a href='https://twitter.com/motions_cat/status/872217218892742656'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0025.src='gif/tmb/0025.gif'" onmouseout="IMG_0025.src='gif/tmb/0025.png'"><img class="eoc" name="IMG_0025" src="gif/tmb/0025.png" alt="0025番目のgif画像"/></a><!--
+			--><a id="0024" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0024.gif"  data-title="「無題!」<hr><a href='https://twitter.com/motions_cat/status/871875729943797760'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0024.src='gif/tmb/0024.gif'" onmouseout="IMG_0024.src='gif/tmb/0024.png'"><img class="eoc" name="IMG_0024" src="gif/tmb/0024.png" alt="0024番目のgif画像"/></a><!--
+			--><a id="0023" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0023.gif"  data-title="「無題!」<hr><a href='https://twitter.com/motions_cat/status/871511504444571648'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0023.src='gif/tmb/0023.gif'" onmouseout="IMG_0023.src='gif/tmb/0023.png'"><img class="eoc" name="IMG_0023" src="gif/tmb/0023.png" alt="0023番目のgif画像"/></a><!--
+			--><a id="0022" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0022.gif"  data-title="「Battle!」<hr><a href='https://twitter.com/motions_cat/status/871031755121217536'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0022.src='gif/tmb/0022.gif'" onmouseout="IMG_0022.src='gif/tmb/0022.png'"><img class="eoc" name="IMG_0022" src="gif/tmb/0022.png" alt="0022番目のgif画像"/></a><!--
+			--><a id="0021" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0021.gif"  data-title="「Pole Dancer!」<hr><a href='https://twitter.com/motions_cat/status/870820212408410112'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0021.src='gif/tmb/0021.gif'" onmouseout="IMG_0021.src='gif/tmb/0021.png'"><img class="eoc" name="IMG_0021" src="gif/tmb/0021.png" alt="0021番目のgif画像"/></a>
+			<!-- 0020
+			--><a id="0020" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0020.gif"  data-title="「無題!」<hr><a href='https://twitter.com/motions_cat/status/870623112584232962'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0020.src='gif/tmb/0020.gif'" onmouseout="IMG_0020.src='gif/tmb/0020.png'"><img class="eoc" name="IMG_0020" src="gif/tmb/0020.png" alt="0020番目のgif画像"/></a><!--
+			--><a id="0019" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0019.gif"  data-title="「きらきら!」<hr><a href='https://twitter.com/motions_cat/status/869838138859937792'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0019.src='gif/tmb/0019.gif'" onmouseout="IMG_0019.src='gif/tmb/0019.png'"><img class="eoc" name="IMG_0019" src="gif/tmb/0019.png" alt="0019番目のgif画像"/></a><!--
+			--><a id="0018" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0018.gif"  data-title="「EDM!」<hr><a href='https://twitter.com/motions_cat/status/869673681630355456'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0018.src='gif/tmb/0018.gif'" onmouseout="IMG_0018.src='gif/tmb/0018.png'"><img class="eoc" name="IMG_0018" src="gif/tmb/0018.png" alt="0018番目のgif画像"/></a><!--
+			--><a id="0017" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0017.gif"  data-title="「無題!」<hr><a href='https://twitter.com/motions_cat/status/868861511099232256'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0017.src='gif/tmb/0017.gif'" onmouseout="IMG_0017.src='gif/tmb/0017.png'"><img class="eoc" name="IMG_0017" src="gif/tmb/0017.png" alt="0017番目のgif画像"/></a><!--
+			--><a id="0016" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0016.gif"  data-title="「Battering Ram!」<hr><a href='https://twitter.com/motions_cat/status/868511001829756928'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0016.src='gif/tmb/0016.gif'" onmouseout="IMG_0016.src='gif/tmb/0016.png'"><img class="eoc" name="IMG_0016" src="gif/tmb/0016.png" alt="0016番目のgif画像"/></a><!--
+			--><a id="0015" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0015.gif"  data-title="「The Colossus!」<hr><a href='https://twitter.com/motions_cat/status/868124481969020929'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0015.src='gif/tmb/0015.gif'" onmouseout="IMG_0015.src='gif/tmb/0015.png'"><img class="eoc" name="IMG_0015" src="gif/tmb/0015.png" alt="0015番目のgif画像"/></a><!--
+			--><a id="0014" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0014.gif"  data-title="「無題!」<hr><a href='https://twitter.com/motions_cat/status/867757488019456000'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0014.src='gif/tmb/0014.gif'" onmouseout="IMG_0014.src='gif/tmb/0014.png'"><img class="eoc" name="IMG_0014" src="gif/tmb/0014.png" alt="0014番目のgif画像"/></a><!--
+			--><a id="0013" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0013.gif"  data-title="「無題!」<hr><a href='https://twitter.com/motions_cat/status/867401034406154240'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0013.src='gif/tmb/0013.gif'" onmouseout="IMG_0013.src='gif/tmb/0013.png'"><img class="eoc" name="IMG_0013" src="gif/tmb/0013.png" alt="0013番目のgif画像"/></a><!--
+			--><a id="0012" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0012.gif"  data-title="「無題!」<hr><a href='https://twitter.com/motions_cat/status/867019010843451393'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0012.src='gif/tmb/0012.gif'" onmouseout="IMG_0012.src='gif/tmb/0012.png'"><img class="eoc" name="IMG_0012" src="gif/tmb/0012.png" alt="0012番目のgif画像"/></a><!--
+			--><a id="0011" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0011.gif"  data-title="「無題!」<hr><a href='https://twitter.com/motions_cat/status/866643440691326977'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0011.src='gif/tmb/0011.gif'" onmouseout="IMG_0011.src='gif/tmb/0011.png'"><img class="eoc" name="IMG_0011" src="gif/tmb/0011.png" alt="0011番目のgif画像"/></a>
+		</div>
+		<div style="background-image: url('images/longiness_bottom.gif'); background-repeat: no-repeat; background-position: left top; padding-left: 64px;">
+			<!-- 0010
+			--><a id="0010" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0010.gif"  data-title="「無題!」<hr><a href='https://twitter.com/motions_cat/status/866525454861074432'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0010.src='gif/tmb/0010.gif'" onmouseout="IMG_0010.src='gif/tmb/0010.png'"><img class="eoc" name="IMG_0010" src="gif/tmb/0010.png" alt="0010番目のgif画像"/></a><!--		
+			--><a id="0009" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0009.gif"  data-title="「無題!」<hr><a href='https://twitter.com/motions_cat/status/866163362039607296'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0009.src='gif/tmb/0009.gif'" onmouseout="IMG_0009.src='gif/tmb/0009.png'"><img class="eoc" name="IMG_0009" src="gif/tmb/0009.png" alt="0009番目のgif画像"/></a><!--
+			--><a id="0008" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0008.gif"  data-title="「無題!」<hr><a href='https://twitter.com/motions_cat/status/865760693219282945'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0008.src='gif/tmb/0008.gif'" onmouseout="IMG_0008.src='gif/tmb/0008.png'"><img class="eoc" name="IMG_0008" src="gif/tmb/0008.png" alt="0008番目のgif画像"/></a><!--
+			--><a id="0007" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0007.gif"  data-title="「無題!」<hr><a href='https://twitter.com/motions_cat/status/864946956795117568'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0007.src='gif/tmb/0007.gif'" onmouseout="IMG_0007.src='gif/tmb/0007.png'"><img class="eoc" name="IMG_0007" src="gif/tmb/0007.png" alt="0007番目のgif画像"/></a><!--
+			--><a id="0006" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0006.gif"  data-title="「無題!」<hr><a href='https://twitter.com/motions_cat/status/864522908181250048'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0006.src='gif/tmb/0006.gif'" onmouseout="IMG_0006.src='gif/tmb/0006.png'"><img class="eoc" name="IMG_0006" src="gif/tmb/0006.png" alt="0006番目のgif画像"/></a><!--
+			--><a id="0005" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0005.gif"  data-title="「無題!」<hr><a href='https://twitter.com/motions_cat/status/864133996199854080'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0005.src='gif/tmb/0005.gif'" onmouseout="IMG_0005.src='gif/tmb/0005.png'"><img class="eoc" name="IMG_0005" src="gif/tmb/0005.png" alt="0005番目のgif画像"/></a><!--
+			--><a id="0004" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0004.gif"  data-title="「無題!」<hr><a href='https://twitter.com/motions_cat/status/863913014612828160'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0004.src='gif/tmb/0004.gif'" onmouseout="IMG_0004.src='gif/tmb/0004.png'"><img class="eoc" name="IMG_0004" src="gif/tmb/0004.png" alt="0004番目のgif画像"/></a><!--
+			--><a id="0003" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0003.gif"  data-title="「無題!」<hr><a href='https://twitter.com/motions_cat/status/863430168068501504'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0003.src='gif/tmb/0003.gif'" onmouseout="IMG_0003.src='gif/tmb/0003.png'"><img class="eoc" name="IMG_0003" src="gif/tmb/0003.png" alt="0003番目のgif画像"/></a><!--
+			--><a id="0002" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0002.gif"  data-title="「無題!」<hr><a href='https://twitter.com/motions_cat/status/863046434928472064'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0002.src='gif/tmb/0002.gif'" onmouseout="IMG_0002.src='gif/tmb/0002.png'"><img class="eoc" name="IMG_0002" src="gif/tmb/0002.png" alt="0002番目のgif画像"/></a><!--
+			--><a id="0001" class="eoc-image-link" data-lightbox="eoc-set" href="gif/nhn/0001.gif"  data-title="「無題!」<hr><a href='https://twitter.com/motions_cat/status/862848937291534336'><img src='images/twitter_icon.png' /></a><script>twemoji.parse($('.lb-caption')[0]);</script>" onmouseover="IMG_0001.src='gif/tmb/0001.gif'" onmouseout="IMG_0001.src='gif/tmb/0001.png'"><img class="eoc" name="IMG_0001" src="gif/tmb/0001.png" alt="0001番目のgif画像"/></a>
+		</div>
+	<hr>
+	<br>
+    </article>
+    <h3 style="text-align: center;">＿人人人人人＿<br>
+    ＞　OTHERS　＜<br>
+    ￣Y^Y^Y^Y^Y￣</h3>
+	<article class="gifcats" style="margin-left: auto;margin-right: auto; max-width: 744px; text-align: center;">
+		<a id="ex_4" class="eoc-image-link" href="gif/nouhin/sika_4.gif.html" data-lightbox="eoc-set" data-title="「もくよう!」"><img class="eoc" src="gif/thumbnail/sika_4.gif" alt=""/></a><!--
+		--><a id="ex_3" class="eoc-image-link" href="gif/nouhin/sika_3.gif.html" data-lightbox="eoc-set" data-title="「すいよう!」"><img class="eoc" src="gif/thumbnail/sika_3.gif" alt=""/></a><!--
+		--><a id="ex_2" class="eoc-image-link" href="gif/nouhin/sika_2.gif.html" data-lightbox="eoc-set" data-title="「かよう!」"><img class="eoc" src="gif/thumbnail/sika_2.gif" alt=""/></a><!--
+		--><a id="ex_1" class="eoc-image-link" href="gif/nouhin/sika_1.gif.html" data-lightbox="eoc-set" data-title="「げつよう!」"><img class="eoc" src="gif/thumbnail/sika_1.gif" alt=""/></a>
+	</article>
+	<br>
+	<hr>
+	<footer>
+		<p class="marquee">You are <script src="counter.php.html"></script> th visitor!</p> 
+		Parody of <a href="https://motions.work">EverydayOneMotion</a><br>
+		<p><a href="https://twitter.com/share" class="twitter-share-button" data-via="motions_cat" data-size="large">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
+		<p><i>Copyright © 2017-2020 EverydayOneCat All Rights Reserved.</i></p>
+		<p style="font-size:smaller; margin-top:0px;"><a href="https://odaibako.net/u/motions_cat">Say meow to Cat</a>｜<a href="contact.html">Contact Cat</a>｜<a href="http://orteil.dashnet.org/cookieclicker/" target='_blank'>Cookie Policy</a></p>
+		<div style="background:rgba(0,0,0,0.1); margin-top: 64px; padding-top: 5px; padding-bottom: 5px ">
+	      Support to cat  <a href="https://www.pixiv.net/fanbox/creator/38082151"><img class="donate_button" style="vertical-align: middle;" src="images/donate_fanbox.png" width="102px" height="30px" alt="pixiv fanbox" /></a>
+	    </div>
+	</footer>
+</div>
+<script src="js/lightbox.min.js"></script>
+<script type="text/javascript">
+	lightbox.option({
+		'resizeDuration': 100,
+		'imageFadeDuration': 200,
+		'fadeDuration': 200
+	});
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var hash = window.location.hash;
+	    $("a"+hash).eq(0).click();
+		var closeFunc = function() {
+			console.log('nyan!');
+			window.location.hash=''; // ライトボックスを閉じたらハッシュ破棄
+		};
+		$("#lightbox .lb-close")[0].addEventListener('click', closeFunc);
+		$("#lightbox")[0].addEventListener('click', closeFunc);
+		$("#lightboxOverlay")[0].addEventListener('click', closeFunc);
+		// $('body').delegate('#lightbox', 'lightbox.updateNav', function() {console.log("meow");});
+
+		$('.eoc-image-link').on('click', function(e){
+			window.location.hash=$(this).attr('id'); // 画像をクリックしたらハッシュつける
+		});
+	});
+</script>
+<script type="text/javascript" src="js/mouse-stalker_cat_with_kirakira.js"></script>
+<script type="text/javascript" src="js/saymeow.js"></script>
+<script type="text/javascript">
+	twemoji.parse(document.body);
+</script>
+</body>
+</html>
